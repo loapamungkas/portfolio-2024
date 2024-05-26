@@ -82,7 +82,7 @@ const Card = ({
           <span className="sr-only">Loading...</span>
         </div>
       ) : (
-        <div className="block rounded-lg p-4 shadow-xl group relative ">
+        <div className="block rounded-lg p-4 shadow-xl group relative transition-all hover:scale-105">
           <div className="relative">
             <img
               alt=""
