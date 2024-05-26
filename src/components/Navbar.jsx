@@ -27,7 +27,9 @@ const Navbar = ({ toggleDarkMode, isDark }) => {
     <>
       <header
         className={`fixed w-full z-50 transition-all duration-300 ${
-          isSticky ? "bg-white/90 dark:bg-mainBlack/90 shadow-sm" : ""
+          isSticky
+            ? "bg-white/90 dark:bg-mainBlack/90 shadow-sm backdrop-blur-xl"
+            : ""
         }`}
       >
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -89,7 +91,7 @@ const Navbar = ({ toggleDarkMode, isDark }) => {
                 <div className="flex gap-4">
                   <a
                     className="rounded-md px-5 py-2.5 text-sm font-medium shadow bg-blue-600 text-white hover:bg-blue-700 dark:bg-gray-200 dark:text-mainBlack dark:hover:bg-gray-100"
-                    href="https://drive.google.com/file/d/1vYTlMNPjlca1Nw2eBEh8Mi7GY7AGcmTe/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1ump0htUYRChxou1ZKJSwNVhQcLEirSh-/view?usp=sharing"
                     target="_blank"
                     onMouseEnter={enlargeCursor}
                     onMouseLeave={shrinkCursor}
