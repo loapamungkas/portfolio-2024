@@ -35,7 +35,11 @@ const Skills = () => {
               seamless user experiences through clean and responsive interfaces.
             </p>
           </div>
-          <div className="relative rounded-lg  lg:order-last lg:py-12 lg:ps-48 text-mainBlack dark:text-white">
+          <div
+            className="relative rounded-lg  lg:order-last lg:py-12 lg:ps-48 text-mainBlack dark:text-white"
+            onMouseEnter={enlargeCursor}
+            onMouseLeave={shrinkCursor}
+          >
             <p className="text-lg font-bold">Abilities</p>
             <ul className="mt-4 list-disc list-inside grid grid-cols-3 place-content-between gap-1 lg:grid-cols-2">
               <li>HTML</li>
@@ -70,7 +74,11 @@ const Skills = () => {
               efficient digital experiences.
             </p>
           </div>
-          <div className="relative rounded-lg  lg:order-last lg:py-12 lg:ps-48 text-mainBlack dark:text-white">
+          <div
+            className="relative rounded-lg  lg:order-last lg:py-12 lg:ps-48 text-mainBlack dark:text-white"
+            onMouseEnter={enlargeCursor}
+            onMouseLeave={shrinkCursor}
+          >
             <p className="text-lg font-bold">Abilities</p>
             <ul className="mt-4 list-disc list-inside grid grid-cols-3 place-content-between gap-1 lg:grid-cols-2">
               <li>PHP</li>
@@ -102,7 +110,11 @@ const Skills = () => {
               impactful user interfaces.
             </p>
           </div>
-          <div className="relative rounded-lg  lg:order-last lg:py-12 lg:ps-48 text-mainBlack dark:text-white">
+          <div
+            className="relative rounded-lg  lg:order-last lg:py-12 lg:ps-48 text-mainBlack dark:text-white"
+            onMouseEnter={enlargeCursor}
+            onMouseLeave={shrinkCursor}
+          >
             <p className="text-lg font-bold">Abilities</p>
             <ul className="mt-4 list-disc list-inside grid grid-cols-2 place-content-between gap-1 lg:grid-cols-2">
               <li>Logo Design</li>
