@@ -1,14 +1,18 @@
 import React from "react";
+import { useCustomCursor } from "../context/CustomCursorContext";
 
 const Footer = () => {
+  const { enlargeCursor, shrinkCursor } = useCustomCursor();
   return (
     <footer className="bg-gray-100 dark:bg-mainBlack">
       <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="relative z-50">
           <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
             <a
-              className="inline-block rounded-full p-2 text-white shadow transition sm:p-3 lg:p-4 bg-blue-600 hover:bg-blue-500 dark:bg-gray-600 dark:hover:bg-gray-500"
+              className="inline-block rounded-full p-2 text-white shadow transition sm:p-3 lg:p-4 bg-blue-600 hover:bg-blue-700 dark:bg-gray-600 dark:hover:bg-gray-500"
               href="#"
+              onMouseEnter={enlargeCursor}
+              onMouseLeave={shrinkCursor}
             >
               <span className="sr-only">Back to top</span>
 
@@ -29,7 +33,11 @@ const Footer = () => {
 
           <div className="lg:flex lg:items-end lg:justify-between">
             <div>
-              <div className="flex justify-center text-teal-600 lg:justify-start">
+              <div
+                className="flex justify-center text-teal-600 lg:justify-start"
+                onMouseEnter={enlargeCursor}
+                onMouseLeave={shrinkCursor}
+              >
                 <span className="sr-only">Home</span>
                 <svg
                   width="60"
@@ -43,14 +51,22 @@ const Footer = () => {
                 </svg>
               </div>
 
-              <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-100 lg:text-left">
+              <p
+                className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-100 lg:text-left"
+                onMouseEnter={enlargeCursor}
+                onMouseLeave={shrinkCursor}
+              >
                 I'm a Web Developer and Graphic Designer, combining creativity
                 with technical skills to craft aesthetic and functional
                 solutions. Welcome to my portfolio!
               </p>
             </div>
 
-            <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
+            <ul
+              className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
+              onMouseEnter={enlargeCursor}
+              onMouseLeave={shrinkCursor}
+            >
               <li>
                 <a
                   className="text-gray-700 dark:text-gray-100 transition "
@@ -78,7 +94,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          <p className="mt-12 text-center text-sm text-gray-500 dark:text-gray-100 lg:text-right">
+          <p
+            className="mt-12 text-center text-sm text-gray-500 dark:text-gray-100 lg:text-right"
+            onMouseEnter={enlargeCursor}
+            onMouseLeave={shrinkCursor}
+          >
             Copyright &copy; 2024 Loa Pamungkas. All rights reserved.
           </p>
         </div>
