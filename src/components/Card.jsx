@@ -1,41 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Icon from "@mdi/react";
-import {
-  mdiArrowTopRight,
-  mdiGithub,
-  mdiReact,
-  mdiLanguageHtml5,
-  mdiLanguageCss3,
-  mdiLanguageJavascript,
-  mdiLanguagePhp,
-  mdiLaravel,
-  mdiFirebase,
-  mdiTailwind,
-} from "@mdi/js";
-
-const getIconPath = (iconName) => {
-  switch (iconName) {
-    case "mdiReact":
-      return mdiReact;
-    case "mdiTailwind":
-      return mdiTailwind;
-    case "mdiLanguageHtml5":
-      return mdiLanguageHtml5;
-    case "mdiLanguageCss3":
-      return mdiLanguageCss3;
-    case "mdiLanguageJavascript":
-      return mdiLanguageJavascript;
-    case "mdiLanguagePhp":
-      return mdiLanguagePhp;
-    case "mdiLaravel":
-      return mdiLaravel;
-    case "mdiFirebase":
-      return mdiFirebase;
-    // Tambahkan case untuk ikon lain jika diperlukan
-    default:
-      return "";
-  }
-};
+import { mdiArrowTopRight, mdiGithub } from "@mdi/js";
 
 const Card = ({
   title,
@@ -138,11 +103,9 @@ const Card = ({
                 {tools.map((tool, index) => {
                   return (
                     <div key={index} className="text-mainBlack dark:text-white">
-                      <Icon
-                        path={getIconPath(tool)}
-                        size={1}
-                        className="fill-current"
-                      />
+                      <span class="inline-flex items-center rounded-sm bg-blue-50 dark:bg-mainBlack px-1.5 py-0.5 text-[0.6rem] font-medium text-gray-600 dark:text-gray-200 ring-1 ring-inset ring-blue-500/10 dark:ring-gray-200/20">
+                        {tool}
+                      </span>
                     </div>
                   );
                 })}

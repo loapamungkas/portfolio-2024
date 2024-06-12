@@ -8,7 +8,7 @@ const Projects = () => {
     {
       category: "Front-End Developer",
       title: "Footsync",
-      tools: ["mdiReact", "mdiTailwind"],
+      tools: ["React", "Tailwind"],
       year: "2024",
       role: "Personal Project",
       link_github: "https://github.com/loapamungkas/footsync-app",
@@ -18,7 +18,7 @@ const Projects = () => {
     {
       category: "Front-End Developer",
       title: "Aromaterapy",
-      tools: ["mdiReact", "mdiTailwind"],
+      tools: ["React", "Tailwind"],
       year: "2024",
       role: "Personal Project",
       link_github: "#",
@@ -28,7 +28,7 @@ const Projects = () => {
     {
       category: "Front-End Developer",
       title: "Aroma Food App",
-      tools: ["mdiReact", "mdiTailwind"],
+      tools: ["React", "Tailwind"],
       year: "2024",
       role: "Personal Project",
       link_github: "https://github.com/loapamungkas/aroma-food-app",
@@ -38,7 +38,7 @@ const Projects = () => {
     {
       category: "Full-Stack Developer",
       title: "Chat App Realtime",
-      tools: ["mdiReact", "mdiFirebase"],
+      tools: ["React", "Firebase"],
       year: "2024",
       role: "Personal Project",
       link_github: "https://github.com/loapamungkas/chat-app-test",
@@ -48,9 +48,9 @@ const Projects = () => {
     {
       category: "Full-Stack Developer",
       title: "Go Adventure App",
-      tools: ["mdiLanguagePhp", "mdiLaravel"],
+      tools: ["PHP", "Laravel"],
       year: "2023",
-      role: "Intern",
+      role: "Freelance",
       link_github: "https://github.com/loapamungkas/go-adventure-backend",
       link_demo: "#",
       photo_path: "goadventurebackend",
@@ -58,9 +58,9 @@ const Projects = () => {
     {
       category: "Front-End Developer",
       title: "Go Adventure Landing Page",
-      tools: ["mdiLanguageHtml5", "mdiLanguageCss3", "mdiLanguageJavascript"],
+      tools: ["HTML", "CSS", "Javascript"],
       year: "2023",
-      role: "Intern",
+      role: "Freelance",
       link_github: "https://github.com/loapamungkas/go-adventure-html",
       link_demo: "https://go-adventure-html.vercel.app/",
       photo_path: "goadventure",
@@ -68,39 +68,38 @@ const Projects = () => {
   ];
   return (
     <>
-      <section
-        id="project"
-        className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:pt-24 lg:px-8"
-      >
-        <h2 className="flex items-center justify-center text-3xl sm:text-4xl font-bold text-mainBlack dark:text-white">
-          Projects
-        </h2>
-        <div
-          className={`grid grid-cols-1 lg:grid-cols-3 gap-5 place-content-between mt-5 py-5`}
-          onMouseEnter={enlargeCursor}
-          onMouseLeave={shrinkCursor}
-        >
-          {projects.map((project, index) => {
-            return (
-              <Card
-                key={index}
-                category={project.category}
-                title={project.title}
-                tools={project.tools}
-                year={project.year}
-                role={project.role}
-                link_github={project.link_github}
-                link_demo={project.link_demo}
-                photo_path={project.photo_path}
-              />
-            );
-          })}
+      <section id="project" className="pt-24 sm:pt-10">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+          <h2 className="flex items-center justify-center text-3xl sm:text-4xl font-bold text-mainBlack dark:text-white">
+            Projects
+          </h2>
+          <div
+            className={`grid grid-cols-1 lg:grid-cols-3 gap-5 place-content-between mt-5 py-5`}
+            onMouseEnter={enlargeCursor}
+            onMouseLeave={shrinkCursor}
+          >
+            {projects.map((project, index) => {
+              return (
+                <Card
+                  key={index}
+                  category={project.category}
+                  title={project.title}
+                  tools={project.tools}
+                  year={project.year}
+                  role={project.role}
+                  link_github={project.link_github}
+                  link_demo={project.link_demo}
+                  photo_path={project.photo_path}
+                />
+              );
+            })}
+          </div>
         </div>
       </section>
 
       <section
         id="work"
-        className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 sm:pt-24 lg:px-8"
+        className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 sm:pt-24 sm:pb-24 lg:px-8"
       >
         <div className="flex flex-col items-center gap-10">
           <h2
