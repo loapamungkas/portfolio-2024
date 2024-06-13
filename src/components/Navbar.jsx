@@ -91,7 +91,7 @@ const Navbar = ({ toggleDarkMode, isDark }) => {
                 <div className="flex gap-4">
                   <a
                     className="rounded-md px-5 py-2.5 text-sm font-medium shadow bg-blue-600 text-white hover:bg-blue-700 dark:bg-gray-200 dark:text-mainBlack dark:hover:bg-gray-100"
-                    href="https://drive.google.com/file/d/1JSPNDmwq-JTfpyMDI2iKrPWJIOZINbpp/view?usp=sharing"
+                    href="https://drive.google.com/drive/folders/1REh9o0MNAmsoFcSBMFwd-GCNQHk7T1_q?usp=drive_link"
                     target="_blank"
                     onMouseEnter={enlargeCursor}
                     onMouseLeave={shrinkCursor}
